@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   $("#Ellipse1,#moon,#Cloud,#anim").css({ animation: "null" })
-  $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#daymode,#fullperson").css({ animation: "null" })
+  $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#dayanim,#fullperson").css({ animation: "null" })
   $("#moonicon").css({ animation: "null" })
   $("#moonicon").fadeOut()
   $("#sunicon").css({ animation: "null" })
@@ -15,7 +15,7 @@ $(document).ready(function () {
     if ($(this).prop("checked") == true) {
 
       $("#Ellipse1,#moon,#Cloud,#anim").css({ animation: "" })
-      $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#daymode,#fullperson").css({ animation: "null" })
+      $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#dayanim,#fullperson").css({ animation: "null" })
       $("body").css({ "background-color": "rgb(41, 44, 53)", "color": "rgb(240, 240, 240)" })
       $("#moonicon").css({ animation: "" })
       $("#moonicon").css({'transform': "rotate(0deg)"});
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     else if ($(this).prop("checked") == false) {
 
-      $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#daymode,#fullperson").css({ animation: "" })
+      $("#Moment,#sun,#sunlight_2,#sunlight_3,#sunlight_5,#sunlight_1,#sunlight_4,#sunlight_6,#sunlight_7,#sunlight_8,#dayanim,#fullperson").css({ animation: "" })
       $("#Ellipse1,#moon,#Cloud,#anim").css({ animation: "null" })
       $("body").css({ "background-color": "rgb(250, 250, 250)", "color": "black" })
       $("#moonicon").css({ animation: "null" })

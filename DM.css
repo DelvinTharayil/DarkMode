@@ -1,35 +1,31 @@
-*{
-  margin: 0px;
-    padding:0px;
-    box-sizing: border-box;
+html, body {
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+#darkmode{
+  display: flex;
+  justify-content: center;
+   transform:translateY(-100px);
 }
 
 #togglebutton{
-
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-  
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
 }
 
-#par{
-
-  margin-top: 10px;
-  padding:0px;
-  box-sizing: border-box;
-  display: flex;
- justify-content: center;
- align-items: center;
- align-content: center;
-
-}
 
 body{
-    
     transition:background 2.5s linear
 }
 
@@ -93,11 +89,15 @@ to{
 
 
 #anim{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-   
+  animation: moonsvg  0.4s 2.5s forwards ; 
 }   
+@keyframes moonsvg{
+    to{
+      
+      opacity: 0;
+      transform:translateY(-300px);
+}
+}
 
 #Cloud{
     fill-opacity:0; 
@@ -137,28 +137,6 @@ fill-opacity: 1;
     }
 }
 
-
-@keyframes moonsvg{
-
-    to{
-      transform:translateY(-200px);
-}
-}
-#anim
-  {
-    animation: moonsvg  0.4s 2.5s forwards ;
-    
-} 
-
-
-
-
-
-#dayanim
-{
-    display: flex;
-    justify-content: center; 
-}
 
 
 #fullperson{
@@ -247,7 +225,7 @@ fill-opacity: 1;
   }
 }
 
-#daymode
+#dayanim
 {
     animation: fadeoutDay 0.5s 2.5s forwards ; 
   } 
@@ -258,5 +236,18 @@ fill-opacity: 1;
 }
 }
 
-
- 
+ @media only screen and (max-width: 1100px)
+{
+  #darksvgmode{
+    display: flex;
+   justify-content: center;
+   transform:translateY(70px);
+    width: 100vw ;
+    height: 50vh; 
+  }
+  
+   #togglebutton{
+    width: 100vw ;
+    height: 50vh; 
+  }
+} 
